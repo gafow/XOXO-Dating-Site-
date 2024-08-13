@@ -3,6 +3,7 @@
     {
     "id": 1,
     "name": "Leanne Graham",
+    "age":"27",
     "username": "Bret",
     "gender":"female",
     "email": "Sincere@april.biz",
@@ -15,6 +16,7 @@
     {
     "id": 2,
     "name": "Ervin Howell",
+    "age":"25",
     "username": "Antonette",
     "gender":"female",
     "email": "Shanna@melissa.tv",
@@ -28,6 +30,7 @@
     {
     "id": 3,
     "name": "Clement Bauch",
+    "age":"23",
     "username": "Sam",
     "gender":"male",
     "email": "Nathan@yesenia.net",
@@ -40,6 +43,7 @@
     {
     "id": 4,
     "name": "Patricia Lebsack",
+    "age":"22",
     "username": "Karianne",
     "gender":"female",
     "email": "Julianne.OConner@kory.org",
@@ -52,6 +56,7 @@
     {
     "id": 5,
     "name": "Chelsey Dietrich",
+    "age":"19",
     "username": "Kamren",
     "gender":"female",
     "email": "Lucio_Hettinger@annie.ca",
@@ -63,7 +68,8 @@
     },
     {
     "id": 6,
-    "name": "Mrs. Dennis Schulist",
+    "name": "Miss. Dennis Schulist",
+    "age":"32",
     "username": "Leopoldo_Corkery",
     "gender":"female",
     "email": "Karley_Dach@jasper.info",
@@ -76,6 +82,7 @@
     {
     "id": 7,
     "name": "Kurtis Weissnat",
+    "age":"33",
     "username": "Elwyn.Skiles",
     "gender":"male",
     "email": "Telly.Hoeger@billy.biz",
@@ -88,6 +95,7 @@
     {
     "id": 8,
     "name": "Nicholas Runolfsdottir V",
+    "age":"22",
     "username": "Maxime_Nienow",
     "gender":"male",
     "email": "Sherwood@rosamond.me",
@@ -100,6 +108,7 @@
     {
     "id": 9,
     "name": "Glenn Reichert",
+    "age":"26",
     "username": "phine",
     "gender":"male",
     "email": "Chaim_McDermott@dana.io",
@@ -112,6 +121,7 @@
     {
     "id": 10,
     "name": "Max DuBuque",
+    "age":"28",
     "username": "Moriah.Stanton",
     "gender":"male",
     "email": "Rey.Padberg@karina.biz",

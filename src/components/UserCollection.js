@@ -1,5 +1,4 @@
 import React from "react";
-import UserList from './UserList';
 import SortBar from "./Sort";
 
 function UserCollection({users, enlistUser, deleteUser, sortBy, enlistedUsers}) {
@@ -19,7 +18,7 @@ const sortedUsers = filteredUsers.slice().sort((a, b) => b[sortBy] - a[sortBy]);
 
 return (
     <div className="w-full max-w-6xl mx-auto px-4 py-8">
-        <SortBar sortBy={sortBy} onSortChange={onSortChange} />
+        <SortBar sortBy={sortBy}  />
         <div className="flex flex-wrap gap-4 mb-4">
             {["Single", "In a Relationship", "Divorced", "Widowed"].map((status) => (
             <label key={status} className="flex items-center space-x-2">
@@ -33,16 +32,7 @@ return (
             </label>
             ))}
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {sortedUsers.map((user) => (
-                <UserList
-                key={user.id}
-                user={user}
-                onClick={() => enlistedUsers(user)}
-                onDelete={() => deleteUser(user)}
-                isSelected={enlistedUsers.some((u) => u.id === user.id)} />
-            ))}
-            </div> 
+        
             <div className="mt-4">
         {sortedUsers.length > 0 ? (
           <ul className="space-y-2">

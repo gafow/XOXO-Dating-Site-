@@ -5,12 +5,13 @@ import App from "./App";
 import "./index.css";
 import UserForm from "./components/UserForm";
 import NavBar from "./components/NavBar";
+import Home from "./components/Home";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <NavBar />
+      <Home />
     </BrowserRouter>
   </React.StrictMode>
 );

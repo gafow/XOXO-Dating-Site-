@@ -15,7 +15,7 @@ function App() {
 
   // Fetch users from the local server
   useEffect(() => {
-    fetch("http://localhost:3000/user")
+    fetch("https://xoxo-backend.vercel.app/user")
       .then((res) => res.json())
       .then((data) => setUsers(data))
       .catch((err) => console.log(err));

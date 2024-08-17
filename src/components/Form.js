@@ -24,7 +24,7 @@ function Form({ users, setUsers }) {
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3000/user", {
+    fetch("https://xoxo-backend.vercel.app/user", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

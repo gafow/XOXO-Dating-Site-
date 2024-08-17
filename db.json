@@ -1,156 +1,165 @@
 {
-   "user":[
+  "user": [
     {
-    "id": 1,
-    "userprofilepicture":"https://randomuser.me/api/portraits/women/89.jpg",
-    "name": "Leanne Graham",
-    "age":"27",
-    "status":"Single",
-    "username": "Bret",
-    "gender":"female",
-    "email": "Sincere@april.biz",
-    "address": {
-    "city": "Gwenborough"},
-    "phone": "1-770-736-8031 ",
-    "interests":"swimming"
-    
-    
-    },
-    {
-    "id": 2,
-    "userprofilepicture":"https://randomuser.me/api/portraits/women/43.jpg",
-    "name": "Ervin Howell",
-    "age":"25",
-    "status":"Widowed",
-    "username": "Antonette",
-    "gender":"female",
-    "email": "Shanna@melissa.tv",
-    "address": {
-    "city": "Wisokyburgh"
-    
-    },
-    "phone": "010-692-6593 x09125",
-    "interests":"travelling"
+      "id": 1,
+      "userprofilepicture": "https://randomuser.me/api/portraits/women/89.jpg",
+      "name": "Leanne Graham",
+      "age": "27",
+      "status": "Single",
+      "username": "Bret",
+      "gender": "female",
+      "email": "Sincere@april.biz",
+      "address": {
+        "city": "Gwenborough"
+      },
+      "phone": "1-770-736-8031 ",
+      "interests": "swimming"
     },
     {
-    "id": 3,
-    "userprofilepicture":"https://randomuser.me/api/portraits/men/64.jpg",
-    "name": "Clement Bauch",
-    "age":"23",
-    "status":"Divorced",
-    "username": "Sam",
-    "gender":"male",
-    "email": "Nathan@yesenia.net",
-    "address": {
-    "city": "McKenziehaven"
-    },
-    "phone": "1-463-123-4447",
-    "interests":"reading novels"
-    },
-    {
-    "id": 4,
-    "userprofilepicture":"https://randomuser.me/api/portraits/women/44.jpg",
-    "name": "Patricia Lebsack",
-    "age":"22",
-    "status":"Single",
-    "username": "Karianne",
-    "gender":"female",
-    "email": "Julianne.OConner@kory.org",
-    "address": {
-    "city": "South Elvis"
-    },
-    "phone": "493-170-9623 x156",
-    "interests":"dancing"
+      "id": 2,
+      "userprofilepicture": "https://randomuser.me/api/portraits/women/43.jpg",
+      "name": "Ervin Howell",
+      "age": "25",
+      "status": "Widowed",
+      "username": "Antonette",
+      "gender": "female",
+      "email": "Shanna@melissa.tv",
+      "address": {
+        "city": "Wisokyburgh"
+      },
+      "phone": "010-692-6593 x09125",
+      "interests": "travelling"
     },
     {
-    "id": 5,
-    "userprofilepicture":"https://randomuser.me/api/portraits/women/85.jpg",
-    "name": "Chelsey Dietrich",
-    "age":"19",
-    "status":"Divorced",
-    "username": "Kamren",
-    "gender":"female",
-    "email": "Lucio_Hettinger@annie.ca",
-    "address": {
-    "city": "Roscoeview"
-    },
-    "phone": "(254)954-1289",
-    "interests":"going for nature walks"
-    },
-    {
-    "id": 6,
-    "userprofilepicture":"https://randomuser.me/api/portraits/women/0.jpg",
-    "name": "Miss. Dennis Schulist",
-    "age":"32",
-    "status":"Single",
-    "username": "Leopoldo_Corkery",
-    "gender":"female",
-    "email": "Karley_Dach@jasper.info",
-    "address": {
-    "city": "South Christy"
-    },
-    "phone": "1-477-935-8478 x6430",
-   "interests":"crotcheting"
+      "id": 3,
+      "userprofilepicture": "https://randomuser.me/api/portraits/men/64.jpg",
+      "name": "Clement Bauch",
+      "age": "23",
+      "status": "Divorced",
+      "username": "Sam",
+      "gender": "male",
+      "email": "Nathan@yesenia.net",
+      "address": {
+        "city": "McKenziehaven"
+      },
+      "phone": "1-463-123-4447",
+      "interests": "reading novels"
     },
     {
-    "id": 7,
-    "userprofilepicture":"https://randomuser.me/api/portraits/men/54.jpg",
-    "name": "Kurtis Weissnat",
-    "age":"33",
-    "status":"Widowed",
-    "username": "Elwyn.Skiles",
-    "gender":"male",
-    "email": "Telly.Hoeger@billy.biz",
-    "address": {
-    "city": "Howemouth"
-    },
-    "phone": "210.067.6132",
-    "interests":"knitting"
-    },
-    {
-    "id": 8,
-    "userprofilepicture":"https://randomuser.me/api/portraits/men/90.jpg",
-    "name": "Nicholas Runolfsdottir V",
-    "age":"22",
-    "status":"Single",
-    "username": "Maxime_Nienow",
-    "gender":"male",
-    "email": "Sherwood@rosamond.me",
-    "address": {
-    "city": "Aliyaview"
-    },
-    "phone": "586.493.6943 x140",
-    "interests":"playing video games"
+      "id": 4,
+      "userprofilepicture": "https://randomuser.me/api/portraits/women/44.jpg",
+      "name": "Patricia Lebsack",
+      "age": "22",
+      "status": "Single",
+      "username": "Karianne",
+      "gender": "female",
+      "email": "Julianne.OConner@kory.org",
+      "address": {
+        "city": "South Elvis"
+      },
+      "phone": "493-170-9623 x156",
+      "interests": "dancing"
     },
     {
-    "id": 9,
-    "userprofilepicture":"https://randomuser.me/api/portraits/men/15.jpg",
-    "name": "Glenn Reichert",
-    "age":"26",
-    "status":"In a Relationship",
-    "username": "phine",
-    "gender":"male",
-    "email": "Chaim_McDermott@dana.io",
-    "address": {
-    "city": "Bartholomebury"
-    },
-    "phone": "(775)976-6794 x41206",
-    "interests":"cycling"
+      "id": 5,
+      "userprofilepicture": "https://randomuser.me/api/portraits/women/85.jpg",
+      "name": "Chelsey Dietrich",
+      "age": "19",
+      "status": "Divorced",
+      "username": "Kamren",
+      "gender": "female",
+      "email": "Lucio_Hettinger@annie.ca",
+      "address": {
+        "city": "Roscoeview"
+      },
+      "phone": "(254)954-1289",
+      "interests": "going for nature walks"
     },
     {
-    "id": 10,
-    "userprofilepicture":"https://randomuser.me/api/portraits/men/28.jpg",
-    "name": "Max DuBuque",
-    "age":"28",
-    "status":"Divorced",
-    "username": "Moriah.Stanton",
-    "gender":"male",
-    "email": "Rey.Padberg@karina.biz",
-    "address": {
-    "city": "Lebsackbury"
+      "id": 6,
+      "userprofilepicture": "https://randomuser.me/api/portraits/women/0.jpg",
+      "name": "Miss. Dennis Schulist",
+      "age": "32",
+      "status": "Single",
+      "username": "Leopoldo_Corkery",
+      "gender": "female",
+      "email": "Karley_Dach@jasper.info",
+      "address": {
+        "city": "South Christy"
+      },
+      "phone": "1-477-935-8478 x6430",
+      "interests": "crotcheting"
     },
-    "phone": "024-648-3804",
-    "interests":"playing golf"
+    {
+      "id": 7,
+      "userprofilepicture": "https://randomuser.me/api/portraits/men/54.jpg",
+      "name": "Kurtis Weissnat",
+      "age": "33",
+      "status": "Widowed",
+      "username": "Elwyn.Skiles",
+      "gender": "male",
+      "email": "Telly.Hoeger@billy.biz",
+      "address": {
+        "city": "Howemouth"
+      },
+      "phone": "210.067.6132",
+      "interests": "knitting"
+    },
+    {
+      "id": 8,
+      "userprofilepicture": "https://randomuser.me/api/portraits/men/90.jpg",
+      "name": "Nicholas Runolfsdottir V",
+      "age": "22",
+      "status": "Single",
+      "username": "Maxime_Nienow",
+      "gender": "male",
+      "email": "Sherwood@rosamond.me",
+      "address": {
+        "city": "Aliyaview"
+      },
+      "phone": "586.493.6943 x140",
+      "interests": "playing video games"
+    },
+    {
+      "id": 9,
+      "userprofilepicture": "https://randomuser.me/api/portraits/men/15.jpg",
+      "name": "Glenn Reichert",
+      "age": "26",
+      "status": "In a Relationship",
+      "username": "phine",
+      "gender": "male",
+      "email": "Chaim_McDermott@dana.io",
+      "address": {
+        "city": "Bartholomebury"
+      },
+      "phone": "(775)976-6794 x41206",
+      "interests": "cycling"
+    },
+    {
+      "id": 10,
+      "userprofilepicture": "https://randomuser.me/api/portraits/men/28.jpg",
+      "name": "Max DuBuque",
+      "age": "28",
+      "status": "Divorced",
+      "username": "Moriah.Stanton",
+      "gender": "male",
+      "email": "Rey.Padberg@karina.biz",
+      "address": {
+        "city": "Lebsackbury"
+      },
+      "phone": "024-648-3804",
+      "interests": "playing golf"
+    },
+    {
+      "id": "87ff",
+      "name": "",
+      "username": "",
+      "email": "",
+      "city": "",
+      "phone": "",
+      "interests": "",
+      "age": "",
+      "gender": ""
     }
-    ] 
+  ]
 }

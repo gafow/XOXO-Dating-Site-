@@ -1,75 +1,51 @@
-import React, { useState } from 'react';
+import React from 'react';
+import UserList from './UserList'; // Import the UserList component
+import SortBar from './SortBar'; // Import the SortBar component
 
+function UserCollection({ users, addUser, removeUser, sortBy, onSortChange, selectedUsers }) {
+  const [filter, setFilter] = React.useState([]);
 
-function SortBar({ filterBy, sortBy, onFilterChange, onSortChange }) {
-  const [mode, setMode] = useState('filter'); // Toggle between 'filter' and 'sort'
+  const handleFilterChange = (e) => {
+    const { value, checked } = e.target;
+    setFilter((prev) =>
+      checked ? [...prev, value] : prev.filter((f) => f !== value)
+    );
+  };
+
+  // Filter and sort users
+  const filteredUsers = users.filter((user) => filter.length === 0 || filter.includes(user.user_status));
+  const sortedUsers = filteredUsers.slice().sort((a, b) => b[sortBy] - a[sortBy]);
 
   return (
-    <div className="p-4 flex flex-col items-center space-y-4">
-      {/* Mode Toggle */}
-      <div className="mb-4">
-        <button
-          className={`py-2 px-4 rounded-md ${mode === 'filter' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
-          onClick={() => setMode('filter')}
-        >
-          Filter
-        </button>
-        <button
-          className={`py-2 px-4 rounded-md ${mode === 'sort' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
-          onClick={() => setMode('sort')}
-        >
-          Sort
-        </button>
+    <div className="w-full max-w-6xl mx-auto px-4 py-8">
+      <SortBar sortBy={sortBy} onSortChange={onSortChange} />
+      <div className="flex flex-wrap gap-4 mb-4">
+        {["Single", "In a Relationship", "Divorced", "Widowed"].map((status) => (
+          <label key={status} className="flex items-center space-x-2">
+            <input
+              type="checkbox"
+              value={status}
+              checked={filter.includes(status)}
+              onChange={handleFilterChange}
+              className="form-checkbox"
+            />
+            <span>{status}</span>
+          </label>
+        ))}
       </div>
- 
-    Filter Buttons
-      {mode === 'filter' && (
-        <div className="flex justify-center space-x-4">
-          <button
-            className={`py-2 px-4 rounded-md ${filterBy === 'single' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
-            onClick={() => onFilterChange('single')}
-          >Filter by Single
-          </button>
-          <button
-            className={`py-2 px-4 rounded-md ${filterBy === 'in a Relationship' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
-            onClick={() => onFilterChange('in a Relationship')}
-          >
-            Filter by In a Relationship
-          </button>
-          <button
-            className={`py-2 px-4 rounded-md ${filterBy === 'divorced' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
-            onClick={() => onFilterChange('divorced')}
-          >
-            Filter by Divorced
-          </button>
-          <button
-            className={`py-2 px-4 rounded-md ${filterBy === 'widowed' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
-            onClick={() => onFilterChange('widowed')}
-          >
-            Filter by Widowed
-          </button>
-        </div>
-      )}
-
-       Sort Buttons 
-      {mode === 'sort' && (
-        <div className="flex justify-center space-x-4">
-          <button
-            className={`py-2 px-4 rounded-md ${sortBy === 'male' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
-            onClick={() => onSortChange('male')}
-          >
-            Sort by Male
-          </button>
-          <button
-            className={`py-2 px-4 rounded-md ${sortBy === 'female' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
-            onClick={() => onSortChange('female')}
-          >
-            Sort by Female
-          </button>
-        </div>
-      )}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {sortedUsers.map((user) => (
+          <UserList
+            key={user.id}
+            user={user}
+            onClick={addUser}
+            onDelete={removeUser}
+            isSelected={selectedUsers.some((u) => u.id === user.id)}
+          />
+        ))}
+      </div>
     </div>
   );
 }
 
-export default SortBar;
+export default UserCollection;

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Matemasie&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Kalnia+Glaze:wght@100..700&family=Matemasie&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 .App {
   text-align: center;
 }
@@ -35,4 +37,46 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.input{
+  width: 10%;
+  padding: 12px;
+  margin: 8px;
+  border-radius: 4px;
+  border: none;
+}
+.submit{
+  background-color:whitesmoke;
+  margin: 10px;
+  margin-left: 10px;
+}
+.submit:hover{
+  background-color: #beebc4;
+}
+body{
+  background-image: url("https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding: 20px 20px 20px 20px;
+  background-size: cover;
+}
+.character-1{
+  font-family: 'Times New Roman', Times, serif;
+}
+.character-4{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.heading{
+  text-decoration-line: underline;
+  text-decoration-color: rgb(104, 99, 99);
+  font-family: "Matemasie", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.body{
+  font-family: "Grey Qo", cursive;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: normal;
 }

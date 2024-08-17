@@ -1,9 +1,17 @@
-import React from 'react';
-import UserList from './UserList'; // Import the UserList component
-import SortBar from './SortBar'; // Import the SortBar component
+// UserCollection.js
+import React, { useState } from "react";
+import SortBar from "./SortBar";
+import UserList from "./UserList";
 
-function UserCollection({ users, addUser, removeUser, sortBy, onSortChange, selectedUsers }) {
-  const [filter, setFilter] = React.useState([]);
+function UserCollection({
+  users,
+  addUser,
+  removeUser,
+  sortBy,
+  onSortChange,
+  selectedUsers,
+}) {
+  const [filter, setFilter] = useState([]);
 
   const handleFilterChange = (e) => {
     const { value, checked } = e.target;
@@ -12,9 +20,18 @@ function UserCollection({ users, addUser, removeUser, sortBy, onSortChange, sele
     );
   };
 
-  // Filter and sort users
-  const filteredUsers = users.filter((user) => filter.length === 0 || filter.includes(user.user_status));
-  const sortedUsers = filteredUsers.slice().sort((a, b) => b[sortBy] - a[sortBy]);
+  const filteredUsers = users.filter(
+    (user) => filter.length === 0 || filter.includes(user.status)
+  );
+
+  const sortedUsers = filteredUsers.slice().sort((a, b) => {
+    if (sortBy === "age") {
+      return a.age - b.age;
+    } else if (sortBy === "username") {
+      return a.username.localeCompare(b.username);
+    }
+    return 0;
+  });
 
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-8">

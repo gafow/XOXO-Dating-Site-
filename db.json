@@ -149,17 +149,8 @@
       },
       "phone": "024-648-3804",
       "interests": "playing golf"
-    },
-    {
-      "id": "87ff",
-      "name": "",
-      "username": "",
-      "email": "",
-      "city": "",
-      "phone": "",
-      "interests": "",
-      "age": "",
-      "gender": ""
     }
+    
+    
   ]
 }

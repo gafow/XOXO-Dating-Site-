@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
+import '../App.js'
 
-function Form() {
+function Form({ users, setUsers }) {
   const [formData, setFormData] = useState({
     name: "",
     username: "",
@@ -12,6 +13,7 @@ function Form() {
     age: "",
     gender: "",
   });
+
   const handleOnChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -19,6 +21,7 @@ function Form() {
       [name]: value,
     }));
   };
+
   const handleOnSubmit = (e) => {
     e.preventDefault();
     fetch("http://localhost:3000/user", {
@@ -29,18 +32,26 @@ function Form() {
       body: JSON.stringify(formData),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data))
-      .catch((err) => console.log(err));
-
-    Swal.fire({
-      title: "Sweet!",
-      text: "Welcome to your love journey!",
-      imageUrl:
-        "https://images.unsplash.com/photo-1518563795073-6b72265ad862?q=80&w=1065&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      imageWidth: 400,
-      imageHeight: 200,
-      imageAlt: "Neon Love Heart",
-    });
+      .then((newUser) => {
+        setUsers([...users, newUser]);
+        Swal.fire({
+          title: "Sweet!",
+          text: "Welcome to your love journey!",
+          imageUrl:
+            "https://images.unsplash.com/photo-1518563795073-6b72265ad862?q=80&w=1065&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          imageWidth: 400,
+          imageHeight: 200,
+          imageAlt: "Neon Love Heart",
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+        Swal.fire({
+          title: "Oops!",
+          text: "Something went wrong. Please try again later.",
+          icon: "error",
+        });
+      });
   };
 
   return (
@@ -49,8 +60,9 @@ function Form() {
       <h4 className="character-4">
         Complete the form below to start your love journey.
       </h4>
-      <form className="input">
+      <form className="input" onSubmit={handleOnSubmit}>
         <input
+        className="name"
           type="text"
           name="name"
           value={formData.name}
@@ -58,6 +70,7 @@ function Form() {
           placeholder="Your Name*"
         />
         <input
+        className="name"
           type="text"
           name="username"
           value={formData.username}
@@ -65,6 +78,7 @@ function Form() {
           placeholder="Your Username*"
         />
         <input
+        className="name"
           type="email"
           name="email"
           value={formData.email}
@@ -72,6 +86,7 @@ function Form() {
           placeholder="Your Email*"
         />
         <input
+        className="name"
           type="text"
           name="city"
           value={formData.city}
@@ -79,6 +94,7 @@ function Form() {
           placeholder="City*"
         />
         <input
+        className="name"
           type="tel"
           name="phone"
           value={formData.phone}
@@ -86,6 +102,7 @@ function Form() {
           placeholder="Your Phone Number*"
         />
         <input
+        className="name"
           type="text"
           name="interests"
           value={formData.interests}
@@ -93,6 +110,7 @@ function Form() {
           placeholder="Your Interests*"
         />
         <input
+        className="name"
           type="number"
           name="age"
           value={formData.age}
@@ -100,17 +118,40 @@ function Form() {
           placeholder="Your Age*"
         />
         <input
+        className="name"
           type="text"
           name="gender"
           value={formData.gender}
           onChange={handleOnChange}
           placeholder="Your Gender*"
         />
+        <button className="submit" type="submit">
+          Get Started
+        </button>
       </form>
-      <button className="submit" type="submit" onClick={handleOnSubmit}>
-        Get Started
-      </button>
-    </div>
+
+      <h2>Current Users</h2>
+      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {users.map((user) => (
+          <li key={user.id} className="user-list">
+            <img
+              src={user.userprofilepicture}
+              alt={`${user.name}'s profile`}
+              width={50}
+              height={50}
+            />
+            <p>Name: {user.name}</p>
+            <p>Age: {user.age}</p>
+            <p>Status: {user.status}</p>
+            <p>Username: {user.username}</p>
+            <p>Gender: {user.gender}</p>
+            <p>City: {user.city}</p>
+            <p>Phone: {user.phone}</p>
+            <p>Interests: {user.interests}</p>
+          </li>
+        ))}
+      </ul>
+      </div>
   );
 }
 

@@ -1,64 +1,22 @@
-// App.js
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NavBar from './components/NavBar';
-import Home from './components/Home';
-import Form from './components/Form';
-import UserCollection from './components/UserCollection';
-import About from './components/About';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Home from './Home';
+import About from './Components/About';
+import Navbar from './Components/NavBar';
+import UserProfile from './Components/UserProfile'; 
+import SignUp from './Components/SignUp'; 
 
 function App() {
-  const [users, setUsers] = useState([]);
-  const [sortBy, setSortBy] = useState('age');
-  const [selectedUsers, setSelectedUsers] = useState([]);
-
-  // Fetch users from the local server
-  useEffect(() => {
-    fetch("https://xoxo-backend.vercel.app/user")
-      .then((res) => res.json())
-      .then((data) => setUsers(data))
-      .catch((err) => console.log(err));
-  }, []);
-
-  const addUser = (user) => {
-    if (!selectedUsers.some((u) => u.id === user.id)) {
-      setSelectedUsers([...selectedUsers, user]);
-    }
-  };
-
-  const removeUser = (user) => {
-    setSelectedUsers(selectedUsers.filter((u) => u.id !== user.id));
-  };
-
-  const handleSortChange = (value) => {
-    setSortBy(value);
-  };
-
   return (
     <Router>
       <div className="App">
-        <NavBar />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route
-            path="/users"
-            element={
-              <UserCollection
-                users={users}
-                addUser={addUser}
-                removeUser={removeUser}
-                sortBy={sortBy}
-                onSortChange={handleSortChange}
-                selectedUsers={selectedUsers}
-              />
-            }
-          />
-          <Route
-            path="/form"
-            element={<Form users={users} setUsers={setUsers} />}
-          />
+          <Route path="/userprofile" element={<UserProfile />} />
+          <Route path="/signup" element={<SignUp />} /> 
         </Routes>
       </div>
     </Router>

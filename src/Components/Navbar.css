@@ -1,0 +1,122 @@
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 3rem;
+
+    background: rgba( 255, 255, 255, 0 );
+    box-shadow: 0 8px 32px 0 rgba(0, 1, 14, 0.37);
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    color: white;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  
+  .navbar-logo h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 60px;
+  
+      font-family: "New Amsterdam", sans-serif;
+      font-weight: 400;
+      font-style: normal;  
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    position: relative;
+    left: -10px;
+  }
+  
+  .navbar-links li {
+    margin: 0;
+    font-size: 20px;
+  
+   
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar-links a:hover {
+    color: orange;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+   
+  }
+  
+
+  /* TITLE */
+.bts-shine {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+}
+@-moz-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}

@@ -1,26 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const UserProfile = () => {
-  const users = [
-    { name: 'Jane Doe', age: 28, profilePicture: 'https://randomuser.me/api/portraits/women/44.jpg', bio: 'Love to travel, cook, and meet new people. Always up for an adventure!', interests: ['Travel', 'Cooking', 'Yoga', 'Music', 'Photography'], email: 'jane@example.com', phone: '123-456-7890' },
-    { name: 'John Smith', age: 32, profilePicture: 'https://randomuser.me/api/portraits/men/45.jpg', bio: 'Avid reader, tech enthusiast, and runner. Always chasing the next big idea.', interests: ['Tech', 'Running', 'Reading', 'Hiking'], email: 'john@example.com', phone: '234-567-8901' },
-    { name: 'Emily Johnson', age: 25, profilePicture: 'https://randomuser.me/api/portraits/women/46.jpg', bio: 'Fashion designer who loves painting and outdoor activities. Always exploring creativity!', interests: ['Fashion', 'Art', 'Traveling', 'Nature'], email: 'emily@example.com', phone: '345-678-9012' },
-    { name: 'Michael Brown', age: 30, profilePicture: 'https://randomuser.me/api/portraits/men/46.jpg', bio: 'Entrepreneur and foodie. Can’t say no to a good book or a culinary adventure!', interests: ['Food', 'Business', 'Books', 'Traveling'], email: 'michael@example.com', phone: '456-789-0123' },
-    { name: 'Sophia Williams', age: 27, profilePicture: 'https://randomuser.me/api/portraits/women/47.jpg', bio: 'Yoga instructor with a passion for wellness and meditation. Loves to be outdoors.', interests: ['Yoga', 'Wellness', 'Meditation', 'Nature'], email: 'sophia@example.com', phone: '567-890-1234' },
-    { name: 'James Miller', age: 35, profilePicture: 'https://randomuser.me/api/portraits/men/47.jpg', bio: 'Software engineer with a love for gaming and sci-fi. Always coding something cool!', interests: ['Coding', 'Gaming', 'Sci-Fi', 'Movies'], email: 'james@example.com', phone: '678-901-2345' },
-    { name: 'Olivia Davis', age: 29, profilePicture: 'https://randomuser.me/api/portraits/women/48.jpg', bio: 'Photographer capturing moments of life. Love hiking and exploring new landscapes.', interests: ['Photography', 'Hiking', 'Exploring', 'Art'], email: 'olivia@example.com', phone: '789-012-3456' },
-    { name: 'David Wilson', age: 33, profilePicture: 'https://randomuser.me/api/portraits/men/48.jpg', bio: 'Guitarist in a band and music lover. Can’t live without tunes and adventures!', interests: ['Music', 'Guitar', 'Adventures', 'Traveling'], email: 'david@example.com', phone: '890-123-4567' },
-    { name: 'Emma Clark', age: 26, profilePicture: 'https://randomuser.me/api/portraits/women/49.jpg', bio: 'Digital marketer with a love for travel and food. Enjoys good company and good vibes.', interests: ['Marketing', 'Food', 'Travel', 'Good Vibes'], email: 'emma@example.com', phone: '901-234-5678' },
-    { name: 'Chris Evans', age: 34, profilePicture: 'https://randomuser.me/api/portraits/men/49.jpg', bio: 'Fitness coach and mountain climber. Always chasing new challenges.', interests: ['Fitness', 'Climbing', 'Outdoor Adventures', 'Sports'], email: 'chris@example.com', phone: '012-345-6789' },
-    { name: 'Ava Martinez', age: 24, profilePicture: 'https://randomuser.me/api/portraits/women/50.jpg', bio: 'Graphic designer who loves painting and exploring cities.', interests: ['Design', 'Art', 'Traveling', 'Cities'], email: 'ava@example.com', phone: '123-456-7891' },
-    { name: 'Daniel Harris', age: 31, profilePicture: 'https://randomuser.me/api/portraits/men/50.jpg', bio: 'Tech enthusiast and coffee lover. Constantly learning new things.', interests: ['Tech', 'Coffee', 'Reading', 'Learning'], email: 'daniel@example.com', phone: '234-567-8902' },
-    { name: 'Grace Lee', age: 29, profilePicture: 'https://randomuser.me/api/portraits/women/51.jpg', bio: 'Environmental scientist who loves the outdoors and sustainability.', interests: ['Environment', 'Sustainability', 'Travel', 'Hiking'], email: 'grace@example.com', phone: '345-678-9013' },
-    { name: 'Liam Johnson', age: 33, profilePicture: 'https://randomuser.me/api/portraits/men/51.jpg', bio: 'Professional photographer capturing life’s moments.', interests: ['Photography', 'Travel', 'Nature'], email: 'liam@example.com', phone: '456-789-0124' },
-    { name: 'Isabella Martinez', age: 26, profilePicture: 'https://randomuser.me/api/portraits/women/52.jpg', bio: 'Fashion blogger with a love for design and styling.', interests: ['Fashion', 'Blogging', 'Travel'], email: 'isabella@example.com', phone: '567-890-1235' },
-    { name: 'Noah Thompson', age: 30, profilePicture: 'https://randomuser.me/api/portraits/men/52.jpg', bio: 'Fitness trainer and wellness coach.', interests: ['Fitness', 'Wellness', 'Nutrition'], email: 'noah@example.com', phone: '678-901-2346' },
-    { name: 'Ava Brown', age: 27, profilePicture: 'https://randomuser.me/api/portraits/women/53.jpg', bio: 'Tech entrepreneur passionate about startups.', interests: ['Tech', 'Startups', 'Innovation'], email: 'ava.brown@example.com', phone: '789-012-3457' },
-    { name: 'Ethan Green', age: 29, profilePicture: 'https://randomuser.me/api/portraits/men/53.jpg', bio: 'Adventure seeker and outdoor enthusiast. Love hiking, camping, and nature photography.', interests: ['Adventure', 'Camping', 'Nature Photography', 'Travel', 'Cooking'], email: 'ethan@example.com', phone: '890-123-4568' }
-  ];
+ const [users, setUsers] = useState([]);
+ useEffect(() => {
+  fetch('http://localhost:3000/users')
+     .then(response => response.json())
+     .then(data => setUsers(data))
+     .catch(error => console.error('Error fetching data:', error));
+ })
 
   const [visibleCount, setVisibleCount] = useState(8);
   const [likes, setLikes] = useState(Array(users.length).fill(0));

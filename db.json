@@ -1,156 +1,166 @@
 {
-  "user": [
+  "users": [
     {
-      "id": 1,
-      "userprofilepicture": "https://randomuser.me/api/portraits/women/89.jpg",
-      "name": "Leanne Graham",
-      "age": "27",
-      "status": "Single",
-      "username": "Bret",
-      "gender": "female",
-      "email": "Sincere@april.biz",
-      "address": {
-        "city": "Gwenborough"
-      },
-      "phone": "1-770-736-8031 ",
-      "interests": "swimming"
+      "name": "Jane Doe",
+      "age": 28,
+      "profilePicture": "https://randomuser.me/api/portraits/women/44.jpg",
+      "bio": "Love to travel, cook, and meet new people. Always up for an adventure!",
+      "interests": ["Travel", "Cooking", "Yoga", "Music", "Photography"],
+      "email": "jane@example.com",
+      "phone": "123-456-7890"
     },
     {
-      "id": 2,
-      "userprofilepicture": "https://randomuser.me/api/portraits/women/43.jpg",
-      "name": "Ervin Howell",
-      "age": "25",
-      "status": "Widowed",
-      "username": "Antonette",
-      "gender": "female",
-      "email": "Shanna@melissa.tv",
-      "address": {
-        "city": "Wisokyburgh"
-      },
-      "phone": "010-692-6593 x09125",
-      "interests": "travelling"
+      "name": "John Smith",
+      "age": 32,
+      "profilePicture": "https://randomuser.me/api/portraits/men/45.jpg",
+      "bio": "Avid reader, tech enthusiast, and runner. Always chasing the next big idea.",
+      "interests": ["Tech", "Running", "Reading", "Hiking"],
+      "email": "john@example.com",
+      "phone": "234-567-8901"
     },
     {
-      "id": 3,
-      "userprofilepicture": "https://randomuser.me/api/portraits/men/64.jpg",
-      "name": "Clement Bauch",
-      "age": "23",
-      "status": "Divorced",
-      "username": "Sam",
-      "gender": "male",
-      "email": "Nathan@yesenia.net",
-      "address": {
-        "city": "McKenziehaven"
-      },
-      "phone": "1-463-123-4447",
-      "interests": "reading novels"
+      "name": "Emily Johnson",
+      "age": 25,
+      "profilePicture": "https://randomuser.me/api/portraits/women/46.jpg",
+      "bio": "Fashion designer who loves painting and outdoor activities. Always exploring creativity!",
+      "interests": ["Fashion", "Art", "Traveling", "Nature"],
+      "email": "emily@example.com",
+      "phone": "345-678-9012"
     },
     {
-      "id": 4,
-      "userprofilepicture": "https://randomuser.me/api/portraits/women/44.jpg",
-      "name": "Patricia Lebsack",
-      "age": "22",
-      "status": "Single",
-      "username": "Karianne",
-      "gender": "female",
-      "email": "Julianne.OConner@kory.org",
-      "address": {
-        "city": "South Elvis"
-      },
-      "phone": "493-170-9623 x156",
-      "interests": "dancing"
+      "name": "Michael Brown",
+      "age": 30,
+      "profilePicture": "https://randomuser.me/api/portraits/men/46.jpg",
+      "bio": "Entrepreneur and foodie. Can’t say no to a good book or a culinary adventure!",
+      "interests": ["Food", "Business", "Books", "Traveling"],
+      "email": "michael@example.com",
+      "phone": "456-789-0123"
     },
     {
-      "id": 5,
-      "userprofilepicture": "https://randomuser.me/api/portraits/women/85.jpg",
-      "name": "Chelsey Dietrich",
-      "age": "19",
-      "status": "Divorced",
-      "username": "Kamren",
-      "gender": "female",
-      "email": "Lucio_Hettinger@annie.ca",
-      "address": {
-        "city": "Roscoeview"
-      },
-      "phone": "(254)954-1289",
-      "interests": "going for nature walks"
+      "name": "Sophia Williams",
+      "age": 27,
+      "profilePicture": "https://randomuser.me/api/portraits/women/47.jpg",
+      "bio": "Yoga instructor with a passion for wellness and meditation. Loves to be outdoors.",
+      "interests": ["Yoga", "Wellness", "Meditation", "Nature"],
+      "email": "sophia@example.com",
+      "phone": "567-890-1234"
     },
     {
-      "id": 6,
-      "userprofilepicture": "https://randomuser.me/api/portraits/women/0.jpg",
-      "name": "Miss. Dennis Schulist",
-      "age": "32",
-      "status": "Single",
-      "username": "Leopoldo_Corkery",
-      "gender": "female",
-      "email": "Karley_Dach@jasper.info",
-      "address": {
-        "city": "South Christy"
-      },
-      "phone": "1-477-935-8478 x6430",
-      "interests": "crotcheting"
+      "name": "James Miller",
+      "age": 35,
+      "profilePicture": "https://randomuser.me/api/portraits/men/47.jpg",
+      "bio": "Software engineer with a love for gaming and sci-fi. Always coding something cool!",
+      "interests": ["Coding", "Gaming", "Sci-Fi", "Movies"],
+      "email": "james@example.com",
+      "phone": "678-901-2345"
     },
     {
-      "id": 7,
-      "userprofilepicture": "https://randomuser.me/api/portraits/men/54.jpg",
-      "name": "Kurtis Weissnat",
-      "age": "33",
-      "status": "Widowed",
-      "username": "Elwyn.Skiles",
-      "gender": "male",
-      "email": "Telly.Hoeger@billy.biz",
-      "address": {
-        "city": "Howemouth"
-      },
-      "phone": "210.067.6132",
-      "interests": "knitting"
+      "name": "Olivia Davis",
+      "age": 29,
+      "profilePicture": "https://randomuser.me/api/portraits/women/48.jpg",
+      "bio": "Photographer capturing moments of life. Love hiking and exploring new landscapes.",
+      "interests": ["Photography", "Hiking", "Exploring", "Art"],
+      "email": "olivia@example.com",
+      "phone": "789-012-3456"
     },
     {
-      "id": 8,
-      "userprofilepicture": "https://randomuser.me/api/portraits/men/90.jpg",
-      "name": "Nicholas Runolfsdottir V",
-      "age": "22",
-      "status": "Single",
-      "username": "Maxime_Nienow",
-      "gender": "male",
-      "email": "Sherwood@rosamond.me",
-      "address": {
-        "city": "Aliyaview"
-      },
-      "phone": "586.493.6943 x140",
-      "interests": "playing video games"
+      "name": "David Wilson",
+      "age": 33,
+      "profilePicture": "https://randomuser.me/api/portraits/men/48.jpg",
+      "bio": "Guitarist in a band and music lover. Can’t live without tunes and adventures!",
+      "interests": ["Music", "Guitar", "Adventures", "Traveling"],
+      "email": "david@example.com",
+      "phone": "890-123-4567"
     },
     {
-      "id": 9,
-      "userprofilepicture": "https://randomuser.me/api/portraits/men/15.jpg",
-      "name": "Glenn Reichert",
-      "age": "26",
-      "status": "In a Relationship",
-      "username": "phine",
-      "gender": "male",
-      "email": "Chaim_McDermott@dana.io",
-      "address": {
-        "city": "Bartholomebury"
-      },
-      "phone": "(775)976-6794 x41206",
-      "interests": "cycling"
+      "name": "Emma Clark",
+      "age": 26,
+      "profilePicture": "https://randomuser.me/api/portraits/women/49.jpg",
+      "bio": "Digital marketer with a love for travel and food. Enjoys good company and good vibes.",
+      "interests": ["Marketing", "Food", "Travel", "Good Vibes"],
+      "email": "emma@example.com",
+      "phone": "901-234-5678"
     },
     {
-      "id": 10,
-      "userprofilepicture": "https://randomuser.me/api/portraits/men/28.jpg",
-      "name": "Max DuBuque",
-      "age": "28",
-      "status": "Divorced",
-      "username": "Moriah.Stanton",
-      "gender": "male",
-      "email": "Rey.Padberg@karina.biz",
-      "address": {
-        "city": "Lebsackbury"
-      },
-      "phone": "024-648-3804",
-      "interests": "playing golf"
+      "name": "Chris Evans",
+      "age": 34,
+      "profilePicture": "https://randomuser.me/api/portraits/men/49.jpg",
+      "bio": "Fitness coach and mountain climber. Always chasing new challenges.",
+      "interests": ["Fitness", "Climbing", "Outdoor Adventures", "Sports"],
+      "email": "chris@example.com",
+      "phone": "012-345-6789"
+    },
+    {
+      "name": "Ava Martinez",
+      "age": 24,
+      "profilePicture": "https://randomuser.me/api/portraits/women/50.jpg",
+      "bio": "Graphic designer who loves painting and exploring cities.",
+      "interests": ["Design", "Art", "Traveling", "Cities"],
+      "email": "ava@example.com",
+      "phone": "123-456-7891"
+    },
+    {
+      "name": "Daniel Harris",
+      "age": 31,
+      "profilePicture": "https://randomuser.me/api/portraits/men/50.jpg",
+      "bio": "Tech enthusiast and coffee lover. Constantly learning new things.",
+      "interests": ["Tech", "Coffee", "Reading", "Learning"],
+      "email": "daniel@example.com",
+      "phone": "234-567-8902"
+    },
+    {
+      "name": "Grace Lee",
+      "age": 29,
+      "profilePicture": "https://randomuser.me/api/portraits/women/51.jpg",
+      "bio": "Environmental scientist who loves the outdoors and sustainability.",
+      "interests": ["Environment", "Sustainability", "Travel", "Hiking"],
+      "email": "grace@example.com",
+      "phone": "345-678-9013"
+    },
+    {
+      "name": "Liam Johnson",
+      "age": 33,
+      "profilePicture": "https://randomuser.me/api/portraits/men/51.jpg",
+      "bio": "Professional photographer capturing life’s moments.",
+      "interests": ["Photography", "Travel", "Nature"],
+      "email": "liam@example.com",
+      "phone": "456-789-0124"
+    },
+    {
+      "name": "Isabella Martinez",
+      "age": 26,
+      "profilePicture": "https://randomuser.me/api/portraits/women/52.jpg",
+      "bio": "Fashion blogger with a love for design and styling.",
+      "interests": ["Fashion", "Blogging", "Travel"],
+      "email": "isabella@example.com",
+      "phone": "567-890-1235"
+    },
+    {
+      "name": "Noah Thompson",
+      "age": 30,
+      "profilePicture": "https://randomuser.me/api/portraits/men/52.jpg",
+      "bio": "Fitness trainer and wellness coach.",
+      "interests": ["Fitness", "Wellness", "Nutrition"],
+      "email": "noah@example.com",
+      "phone": "678-901-2346"
+    },
+    {
+      "name": "Ava Brown",
+      "age": 27,
+      "profilePicture": "https://randomuser.me/api/portraits/women/53.jpg",
+      "bio": "Tech entrepreneur passionate about startups.",
+      "interests": ["Tech", "Startups", "Innovation"],
+      "email": "ava.brown@example.com",
+      "phone": "789-012-3457"
+    },
+    {
+      "name": "Ethan Green",
+      "age": 29,
+      "profilePicture": "https://randomuser.me/api/portraits/men/53.jpg",
+      "bio": "Adventure seeker and outdoor enthusiast. Love hiking, camping, and nature photography.",
+      "interests": ["Adventure", "Camping", "Nature Photography", "Travel", "Cooking"],
+      "email": "ethan@example.com",
+      "phone": "890-123-4568"
     }
-    
-    
   ]
 }

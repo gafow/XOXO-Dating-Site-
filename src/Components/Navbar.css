@@ -36,6 +36,7 @@
     gap: 4rem;
     position: relative;
     left: -10px;
+    color: black;
   }
   
   .navbar-links li {

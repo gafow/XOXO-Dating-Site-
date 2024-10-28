@@ -15,6 +15,9 @@ function Navbar() {
           <li><Link to="/about">About</Link></li>
           <hr />
           <li><Link to="/userprofile">Users</Link></li> 
+          <li><Link to="register">Register</Link></li>
+          <li><Link to="login">Login</Link></li>
+
           <hr />
         </ul>
       </nav>

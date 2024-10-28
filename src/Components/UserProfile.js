@@ -53,7 +53,7 @@ const UserProfile = () => {
               alt={`${user.name} profile`}
               style={styles.profilePicture}
             />
-            <h2 style={styles.name}>{user.name}, {user.age}</h2>
+            <h2 style={styles.username}>{user.username}, {user.age}</h2>
             <p style={styles.bio}>{user.bio}</p>
             <div style={styles.interests}>
               <h3 style={styles.interestsTitle}>Interests:</h3>
@@ -65,7 +65,7 @@ const UserProfile = () => {
             </div>
             <div style={styles.contactInfo}>
               <p><strong>Email:</strong> {user.email}</p>
-              <p><strong>Phone:</strong> {user.phone}</p>
+              <p><strong>Phone:</strong> {user.password}</p>
             </div>
             <div style={styles.likeSection}>
               <button

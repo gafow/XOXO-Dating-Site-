@@ -16,7 +16,6 @@ function Navbar() {
           <hr />
           <li><Link to="/userprofile">Users</Link></li> 
           <hr />
-          <li><Link to="/signup">Sign Up</Link></li> 
         </ul>
       </nav>
     </div>
